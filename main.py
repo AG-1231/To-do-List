@@ -1,12 +1,11 @@
 import json
 import os
  
-# where we save stuff so it doesn't disappear when you close the program
+
 SAVE_FILE = "my_todos.json"
  
  
-def load_todos():
-    # if the file doesn't exist yet, just start with an empty list
+def load_todos()
     if not os.path.exists(SAVE_FILE):
         return []
     with open(SAVE_FILE, "r") as f:
